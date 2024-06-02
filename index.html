@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="letra-q.ico">
+</head>
+<body>
+    <h1 class="title">Quiz - Padrões de Projetos de Software em Java</h1>
+    <div class="progresso">
+        <progress class="barra-progresso" id="barra-progresso" value="0" max="0"></progress>
+        <h4 class="qtd-progresso" id="qtd-progresso">Foram respondidas <span id="qtd-respondidas">0</span> perguntas do total de <span id="total-perguntas">0</span></h4>
+    </div>
+    <div id="quiz-container">
+        <h3 id="question"></h3>
+        <form id="options-form">
+            <div id="options"></div>
+        </form>
+        <button id="next-btn" class="hidden">Confirmar</button>
+        <div class="progress-bar">
+            <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+        </div>
+        <button id="button-refresh" class="button-refresh">Tentar Novamente</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

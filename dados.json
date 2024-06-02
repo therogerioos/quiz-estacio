@@ -1,0 +1,336 @@
+[
+    {
+        "question": "O ferramental do JPA oferece diversos componentes, com finalidades específicas, no âmbito da persistência de dados, oferecendo um caminho comum para o mapeamento objeto-relacional. Qual componente, oferecido pelo JPA, é responsável pelo manuseio das diversas entidades?",
+        "options": ["Transaction", "EntityManagerFactory", "Entity", "Column", "EntityManager"],
+        "answer": "EntityManager"
+    },
+    {
+        "question": "As mensagerias são um ferramental de ampla utilização em ambientes corporativos, e entre os diferentes tipos de EJBs, os MDBs são os componentes responsáveis pelo comportamento assíncrono do sistema, baseado na utilização de mensagerias. Assinale a alternativa correta com relação aos Message Driven Benas, ou MDBs:",
+        "options": ["São definidos pela anotação @Message", "Precisam implementar a interface SessionListener", "Eles podem guardar informações de estado", "Necessitam de interfaces @Local e @Remote", "Tratam as mensagens através de seu único método, denominado onMessage"],
+        "answer": "Tratam as mensagens através de seu único método, denominado onMessage"
+    },
+    {
+        "question": "Padrões arquiteturais definem os componentes estruturais de um sistema, e a forma de comunicação entre eles ou com outros sistemas, organizando as regras gerais para a concepção de aplicativos com algum perfil funcional específico. Plataformas de objetos distribuídos, como o CORBA, trabalham em um padrão arquitetural denominado:",
+        "options": ["Pipeline", "PAC", "Event-Driven", "Broker", "MVC"],
+        "answer": "Broker"
+    },
+    {
+        "question": "A arquitetura oferecida pelo JPA modificou a forma do Java lidar com os dados, e o conhecimento acerca de suas características é fundamental para todo programador que utilize a plataforma. Assinale a alternativa INCORRETA acerca do JPA:",
+        "options": ["Trabalha com código anotado Java.", "Precisa de um arquivo de configuração denominado persistence.xml", "Permite mapear os relacionamentos da base de dados.", "Com a adoção do JPA eliminamos a necessidade do JDBC.", "É o mecanismo padrão de ORM do Java"],
+        "answer": "Com a adoção do JPA eliminamos a necessidade do JDBC."
+    },
+    {
+        "question": "Sobre o padrão Strategy, assinale a alternativa correta:",
+        "options": ["Permite salvar o estado interno de um objeto, sem quebrar o seu encapsulamento, permitindo que esse estado seja restaurado posteriormente nesse mesmo objeto.", "Define uma família de algoritmos encapsulados em objetos, permitindo que possamos trocar o algoritmo específico sem afetar o módulo usuário desse algoritmo.", "Permite separar os estados de um objeto ao longo do seu ciclo de vida em classes distintas, sendo definida uma classe para cada possível estado de um objeto, o que elimina a necessidade da classe detentora dos estados, fazendo a distinção do processamento a ser realizado, por meio de estruturas switch-case ou if-then-else complexas.", "Encapsula uma requisição em um objeto, desacoplando o objeto requisitante do objeto executor. É comumente implementada em frameworks de interface com o usuário.", "Define em uma superclasse o esqueleto de um algoritmo comum a várias subclasses, sendo que alguns passos específicos desse algoritmo podem ser implementados nas subclasses."],
+        "answer": "Define uma família de algoritmos encapsulados em objetos, permitindo que possamos trocar o algoritmo específico sem afetar o módulo usuário desse algoritmo."
+    },
+    {
+        "question": "\"Permitir que um módulo cliente acesse sequencialmente os objetos de uma coleção, sem que esse módulo precise conhecer a representação interna dessa coleção, ou seja, a coleção pode ser uma lista encadeada, um vetor, uma árvore, ou qualquer outra estrutura\". Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Template Method", "Mediator", "Iterator", "Command", "Observer"],
+        "answer": "Iterator"
+    },
+    {
+        "question": "Na implementação desse padrão, cada objeto de uma estrutura hierárquica deve definir uma operação Accept, que recebe um objeto de uma classe X como parâmetro. A classe X, por sua vez, implementa uma interface genérica Z, definindo uma operação específica de tratamento para cada tipo de objeto que pertença à estrutura hierárquica. Assinale a opção com o nome do padrão cuja estrutura de solução foi descrita no enunciado.",
+        "options": ["Visitor", "State", "Strategy", "Template Method", "Observer"],
+        "answer": "Visitor"
+    },
+    {
+        "question": "Assinale o padrão que utiliza uma fábrica de objetos de modo a gerenciar a instanciação e o comportilhamento de objetos imutáveis utilizados em larga escala em um sistema:",
+        "options": ["Composite", "Proxy", "Facade", "Adapter", "Flyweight"],
+        "answer": "Flyweight"
+    },
+    {
+        "question": "Ao desenvolver um editor de texto, a equipe optou pelo padrão Builder para facilitar a construção de um conjunto complexo de objetos, como a formatação de texto. Este padrão ajuda a separar a construção do objeto de sua representação. Qual é a vantagem principal do padrão Builder neste cenário?",
+        "options": ["Criação de um objeto com várias representações.", "Criação de uma única instância de uma classe.", "Construção passo a passo de um objeto complexo.", "Clonagem de objetos com o mesmo estado.", "Criação de famílias de objetos relacionados."],
+        "answer": "Construção passo a passo de um objeto complexo."
+    },
+    {
+        "question": "A classe java.awt.Toolkit é um exemplo da aplicação de que padrão de projeto?",
+        "options": ["Prototype", "Builder", "AbstractFactory", "FactoryMethod", "Singleton"],
+        "answer": "AbstractFactory"
+    },
+    {
+        "question": "Você está definindo uma classe e deseja que todas as chamadas de operações para objetos dessa classe possam ser interceptadas, para que algum procedimento de verificação ou autorização seja realizado antes da operação destino ser executada. Para isso, você define uma classe intermediária que oferece as mesmas operações da classe destino, porém, executando esses procedimentos adicionais para, em seguida, delegar a execução para o objeto destino. Assinale a alternativa com o nome do padrão que define essa estrutura de solução:",
+        "options": ["Adapter", "Composite", "Decorator", "Facade", "Proxy"],
+        "answer": "Proxy"
+    },
+    {
+        "question": "Serve como alternativa à utilização de subclasses na atribuição de responsabilidades, provendo uma forma mais flexível e dinâmica, por meio da superposição de objetos em que o objeto mais externo adiciona funcionalidades às operações do objeto mais interno. Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Facade", "Decorator", "Composite", "Bridge", "Proxy"],
+        "answer": "Decorator"
+    },
+    {
+        "question": "Sobre o padrão Facade, assinale a alternativa correta:",
+        "options": ["Com a aplicação do padrão Facade, os módulos clientes podem utilizar um componente ou subsistema por meio de uma interface de alto nível.", "Com a aplicção do padrão Facade, os módulos clientes passam a depender apenas de uma interface de alto nívl oferecida por um subsistema, não podendo utilizar diretamente elementos definidos dentro desse subsistema.", "O padrão Facade fornece uma interface de alto nível para a manipulação de um hierarquia de objetos complexos.", "O padrão Facade visa fornecer aos módulos clientes uma interface de alto nível para a instanciação de objetos complexos.", "O padrão Facade permite adicionar funcionalidades de alto nível de abstração a componentes já existentes."],
+        "answer": "Com a aplicação do padrão Facade, os módulos clientes podem utilizar um componente ou subsistema por meio de uma interface de alto nível."
+    },
+    {
+        "question": "Fornecer uma interface de alto nível para os módulos clientes acessarem um componente ou subsistema, desacoplando os módulos clientes da estrutura interna do subsistema e reduzindo o número de elementos com os quais os módulos clientes precisam interagir para realizar um serviço. Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Proxy", "Composite", "Bridge", "AbstractFactory", "Facade"],
+        "answer": "Facade"
+    },
+    {
+        "question": "Analise a estrategia de solução a seguir: \"Definir um construtor private e implementar uma operação estática que retorna uma instância criada em uma operação com escopo static e armazenada como um atributo static dentro da própria classe\". Assinale a alternativa com o nome do padrão que define essa estratégia:",
+        "options": ["FactoryMethod", "Builder", "Singleton", "AbstractFactory", "Prototype"],
+        "answer": "Singleton"
+    },
+    {
+        "question": "Os iteradores de coleção em Java obtidos a partir da interface Collection são implementados com a aplicação de qual padrão de projeto?",
+        "options": ["Builder", "FactoryMethod", "Prototype", "Singleton", "AbstractFactory"],
+        "answer": "FactoryMethod"
+    },
+    {
+        "question": "Assinale a alternativa com o nome do padrão GRASP que recomenda que uma responsabilidade seja atribuída à classe que possua o conhecimento necessário  para realizá-la, evitando, assim, a definição de classes de negócio somente com operações de acesso, isto é, operações get/set dos seus atributos.",
+        "options": ["Controlador", "Memento", "Especialista na Informação", "Indireção", "Fábrica"],
+        "answer": "Especialista na Informação"
+    },
+    {
+        "question": "Assinale a alternativa com a afirmação CORRETA sobre o padrão Controlador:",
+        "options": ["O módulo Controlador centraliza a interação do usuário com o sistema, capturando os eventos externos e controlando o fluxo de navegação das telas e janelas do sistema.", "O módulo Controlador coordena e controla os módulos responsáveis pela produção da resposta a eventos lógicos de sistema gerados pela camada de interface com o usuário.", "O módulo Controlador centraliza o código relacionado à lógica de negócio do sistema ou de um caso de uso.", "Em uma aplicação Java web, o módulo controlador pode ser implementado como um servelet.", "O padrão Controlador proposto pelo GRASP equivale ao padrão GoF Strategy."],
+        "answer": "O módulo Controlador coordena e controla os módulos responsáveis pela produção da resposta a eventos lógicos de sistema gerados pela camada de interface com o usuário."
+    },
+    {
+        "question": "Uma classe X acessa diretamente os atributos públicos de uma classe Y. Que tipo de acoplamento existe entre X e Y?",
+        "options": ["Acoplamento de Estrutura", "Acoplamento de Conteúdo", "Acoplamento de Dados", "Acoplamento Global", "Acomplamento Externo"],
+        "answer": "Acoplamento de Conteúdo"
+    },
+    {
+        "question": "Analise o propósito a seguir: \"Garantir que uma classe somente tenha uma instância em um processo de execução, fornecendo uma forma de acesso a essa única instância e impedindo que outros módulos possam ter acesso a seu construtor\". Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Abstract Factory", "Factory Method", "Singleton", "Prototype", "Builder"],
+        "answer": "Singleton"
+    },
+    {
+        "question": "Ao desenvolver um editor de texto, a equipe optou pelo padrão Builder para facilitar a construção de um conjunto complexo de objetos, como a formatação de texto. Este padrão ajuda a separar a construção do objeto de sua representação. Qual é a vantagem principal do padrão Builder neste cenário?",
+        "options": ["Criação de uma única instância de uma classe.", "Construção passo a passo de um objeto complexo.", "Criação de famílias de objetos relacionados.", "Clonagem de objetos com o mesmo estado.", "Criação de um objeto com várias representações."],
+        "answer": "Construção passo a passo de um objeto complexo."
+    },
+    {
+        "question": "Em um projeto de software para gestão de bibliotecas, o padrão Singleton é utilizado para garantir uma única instância do sistema de gerenciamento de usuários. Este padrão assegura que todas as operações de empréstimo e devolução de livros sejam gerenciadas de forma centralizada. Qual é a principal característica do padrão Singleton utilizada neste contexto?",
+        "options": ["Permite a criação de múltiplas instâncias de uma classe.", "Facilita a criação de objetos complexos em etapas.", "Garante uma única instância de uma classe em toda a aplicação.", "Fornece uma interface para criar famílias de objetos relacionados.", "Permite clonar objetos mantendo o mesmo estado."],
+        "answer": "Garante uma única instância de uma classe em toda a aplicação."
+    },
+    {
+        "question": "Você precisa implementar um módulo que leia um arquivo RTF (Rich Text Format) e converta seu conteúdo em diferentes formatos (ASCII, TeX, HTML etc.). Sabendo que o arquivo é composto por diferentes partes (texto, formatação, figuras etc.), qual dos padrões seria mais indicado para isolar o conversor das diferentes formas de representação do conteúdo gerado?",
+        "options": ["Abstract Factory", "Factory Method", "Singleton", "Prototype", "Builder"],
+        "answer": "Builder"
+    },
+    {
+        "question": "Sobre o padrão Factory Method, assinale a alternativa correta:",
+        "options": ["Esse padrão não é utilizado na implementação de frameworks.", "Sua implementação visa evitar a criação de variáveis globais.", "Sua implementação envolve a aplicação do conceito de polimorfismo.", "Seu propósito é permitir a criação de uma fábrica por meio da cópia de um objeto existente.", "Cada classe pode implementar no máximo um factory method."],
+        "answer": "Sua implementação envolve a aplicação do conceito de polimorfismo."
+    },
+    {
+        "question": "Em um sistema de vendas online, o padrão Abstract Factory é utilizado para criar objetos relacionados a diferentes categorias de produtos sem especificar suas classes concretas. Isso permite flexibilidade na adição de novas categorias de produtos.Qual é o propósito do padrão Abstract Factory neste contexto?",
+        "options": ["Garantir que apenas uma instância de uma classe seja criada.", "Permitir a construção de um objeto em múltiplas etapas.", "Criar uma família de objetos relacionados sem especificar suas classes concretas.", "Clonar objetos mantendo seu estado original.", "Gerenciar o ciclo de vida de objetos complexos."],
+        "answer": "Criar uma família de objetos relacionados sem especificar suas classes concretas."
+    },
+    {
+        "question": "Analise a estratégia de solução a seguir: \"Implementar uma operação clone em cada produto concreto a ser instanciado, permitindo que um módulo cliente crie uma nova instância por meio da criação de uma réplica de um objeto já existente\". Assinale a alternativa com o nome do padrão que define essa estratégia:",
+        "options": ["Abstract Factory", "Factory Method", "Singleton", "Prototype", "Builder"],
+        "answer": "Prototype"
+    },
+    {
+        "question": "Um aplicativo de reserva de hotéis utiliza o padrão Factory Method para criar diferentes tipos de reservas, como quartos standard e suítes. Este padrão permite que subclasses decidam que classe de objetos será instanciada, baseado nas preferências do usuário. Qual é o benefício do padrão Factory Method neste aplicativo?",
+        "options": ["Assegura a existência de uma única instância de uma classe.", "Constrói objetos complexos em várias etapas.", "Permite que subclasses decidam sobre a criação de objetos.", "Facilita a clonagem de objetos com o mesmo estado.", "Cria famílias de objetos sem especificar suas classes concretas."],
+        "answer": "Permite que subclasses decidam sobre a criação de objetos."
+    },
+    {
+        "question": "Analise a estratégia de solução a seguir: \"Definir um participante Creator com uma operação abstrata que é implementada em cada subclasse Concrete Creator, sendo cada implementação concreta dessa operação responsável pela instanciação de um produto específico\". Assinale a alternativa com o nome do padrão que define essa estratégia:",
+        "options": ["Abstract Factory", "Factory Method", "Singleton", "Prototype", "Builder"],
+        "answer": "Factory Method"
+    },
+    {
+        "question": "Conseguir adicionar um novo fornecedor externo de um serviço já utilizado por um sistema, apenas adicionando um módulo que seja capaz de converter uma requisição de uma interface conhecida pelo sistema para a interface proprietária fornecida pelo componente externo é um dos efeitos obtidos com a aplicação de qual padrão?",
+        "options": ["Bridge", "Facade", "Proxy", "Adapter", "Flyweight"],
+        "answer": "Adapter"
+    },
+    {
+        "question": "Que padrão pode ser utilizado na implementação de uma estrutura hierárquica de diretório, em que existam pastas que podem conter pastas ou arquivos, sendo que algumas operações com as pastas devem ser aplicadas de forma recursiva aos elementos que fazem parte dela, isto é, outras pastas e arquivos?",
+        "options": ["Proxy", "Facade", "Composite", "Adapter", "Flyweight"],
+        "answer": "Composite"
+    },
+    {
+        "question": "Possibilitar a manipulação de objetos individuais e de agregados de uma estrutura hierárquica (árvore) de objetos por meio do mesmo conjunto de operações, sem que o módulo cliente precise fazer a distinção entre o tipo do objeto manipulado (individual ou agregado). Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Proxy", "Composite", "Bridge", "Flyweight", "Adapter"],
+        "answer": "Composite"
+    },
+    {
+        "question": "Você está desenvolvendo um sistema e percebe que está instanciando uma grande quantidade de objetos cujos atributos não mudam de valor durante toda a execução do programa. Muitos desses objetos instanciados são réplicas, o que gera uma utilização muito ineficiente da memória. Assinale a alternativa com o nome do padrão que poderia ser aplicado nesse cenário:",
+        "options": ["Composite", "Bridge", "Singleton", "Flyweight", "Decorator"],
+        "answer": "Flyweight"
+    },
+    {
+        "question": "Você está definindo uma classe e deseja que todas as chamadas de operações para objetos dessa classe possam ser interceptadas, para que algum procedimento de verificação ou autorização seja realizado antes da operação destino ser executada. Para isso, você define uma classe intermediária que oferece as mesmas operações da classe destino, porém, executando esses procedimentos adicionais para, em seguida, delegar a execução para o objeto destino. Assinale a alternativa com o nome do padrão que define essa estrutura de solução:",
+        "options": ["Adapter", "Decorator", "Composite", "Proxy", "Facade"],
+        "answer": "Proxy"
+    },
+    {
+        "question": "Implementar um componente para cada fornecedor de um determinado serviço, supondo que possamos ter diferentes fornecedores com APIs proprietárias para esse serviço utilizado pelo nosso sistema, de modo que esse componente converta uma requisição genérica do serviço utilizado pelos módulos clientes do sistema em chamadas específicas da API do fornecedor externo. Essa descrição corresponde à estrutura de solução de qual padrão?",
+        "options": ["Prototype", "Facade", "Composite", "Flyweight", "Adapter"],
+        "answer": "Adapter"
+    },
+    {
+        "question": "Permitir que uma abstração que tenha diferentes representações possa variar de forma independente das suas representações, como, por exemplo, no caso de uma abstração implementada em diferentes plataformas (Windows, Linux, etc.). Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Composite", "Bridge", "Facade", "Flyweight", "Abstract Factory"],
+        "answer": "Bridge"
+    },
+    {
+        "question": "Sobre o padrão Composite, assinale a alternativa correta:",
+        "options": ["Esse padrão é utilizado na composição de adaptadores para serviços implementados por componentes de terceiros.", "Esse padrão é orientado para construção e manipulação de grafos cíclicos de objetos.", "Esse padrão permite manipular agregados e seus elementos com uma interface uniforme, isto é, com as mesmas operações.", "Esse padrão é apropriado para situações em que operações sobre o todo não devam ser aplicadas de forma recursiva às suas partes.", "O conceito de polimorfismo não está presente na solução proposta pelo padrão."],
+        "answer": "Esse padrão permite manipular agregados e seus elementos com uma interface uniforme, isto é, com as mesmas operações."
+    },
+    {
+        "question": "Você está implementando um conjunto de componentes de interface gráfica com o usuário que precisa rodar em diferentes plataformas (ex.: Windows, Linux). Você quer poder evoluir a estrutura dos componentes gráficos de forma independente das implementações específicas dos componentes para cada plataforma. Portanto, você quer poder especializar os componentes gráficos de forma independente das plataformas onde esses componentes rodarão. Assinale a alternativa com o nome do padrão mais indicado para ser aplicado nesse contexto:",
+        "options": ["Decorator", "Proxy", "Facade", "Adapter", "Bridge"],
+        "answer": "Bridge"
+    },
+    {
+        "question": "Assinale a alternativa com dois padrões que possuem uma estrutura de solução muito parecida, porém, com propósitos distintos.",
+        "options": ["Proxy e Adapter", "Adapter e Composite", "Adapter e Decorator", "Composite e Decorator", "Proxy e Composite"],
+        "answer": "Composite e Decorator"
+    },
+    {
+        "question": "Assinale a alternativa que expressa a intenção do padrão de projeto Template Method:",
+        "options": ["Encapsular uma família de algoritmos em objetos, permitindo que os módulos clientes possam utilizar esses algoritmos de forma intercambiável.", "Definir uma relação de dependência entre objetos, de modo a garantir que modificações no estado do objeto detentor da informação sejam notificadas automaticamente para os objetos inscritos previamente como interessados em receber essas notificações.", "Implementar a estrutura de um algoritmo genérico em uma superclasse, considerando que os passos comuns são implementados na própria superclasse, enquanto os passos específicos são implementados nas suas subclasses.", "Permite capturar o estado interno de um objeto, permitindo que o seu estado seja restaurado posteriormente, sem quebrar o encapsulamento desse objeto.", "Encapsular uma requisição em um objeto, permitindo o registro do histórico de requisições disparadas pelos módulos cliente e a criação de filas de requisições."],
+        "answer": "Implementar a estrutura de um algoritmo genérico em uma superclasse, considerando que os passos comuns são implementados na própria superclasse, enquanto os passos específicos são implementados nas suas subclasses."
+    },
+    {
+        "question": "\"Seja um cenário em que existem vários objetos capazes de realizar o processamento associado a uma requisição. Esses objetos são organizados em uma lista encadeada de modo que a requisição vai sendo passada do primeiro objeto receptor da requisição para o próximo da lista, e assim sucessivamente, até que o resultado desejado seja atingido\". Assinale a alternativa com o nome do padrão com esse propósito:",
+        "options": ["Chain of Responsibility", "Command", "Strategy", "Mediator", "Iterator"],
+        "answer": "Chain of Responsibility"
+    },
+    {
+        "question": "Você está desenvolvendo um sistema para acompanhar as cotações da bolsa de valores. As cotações podem ser acompanhadas na interface com usuário na forma textual (ticker da ação e o seu valor) e na forma de um gráfico de candlesticks, apresentando o histórico das cotações em um período do tempo. As duas formas de visualização devem estar em sincronia com as variações que ocorrem com o valor da cotação das ações. Assinale a alternativa com o nome do padrão que pode ser aplicado para resolver esse problema de sincronização de visualizações de um conjunto de informações com a sua fonte.",
+        "options": ["Strategy", "State", "Iterator", "Observer", "Mediator"],
+        "answer": "Observer"
+    },
+    {
+        "question": "Você está desenvolvendo um módulo correspondente a uma classe X que possui um ciclo de vida composto por estados e não quer escrever o código dessa classe utilizando estruturas condicionais complexas. Para isso, você separa o processamento de cada parte desse ciclo de vida em uma classe à parte. A classe X apenas guarda a referência para a situação corrente do processamento e repassa as requisições para o objeto correspondente a essa situação corrente. Assinale o padrão a que esse texto se refere:",
+        "options": ["Command", "State", "Mediator", "Memento", "Chain of Responsibility"],
+        "answer": "State"
+    },
+    {
+        "question": "Você está desenvolvendo um sistema que produz informações guardadas em um ou mais objetos que só devem ser armazenados em um banco de dados após o processamento ser concluído. Entretanto, esses dados estão vinculados a uma sessão de usuário, que pode ser interrompida em função de problemas de conexão. Esse padrão oferece uma solução que permite que um objeto A capture e salve todo o estado de um objeto B da sessão, sem que A tenha que quebrar o encapsulamento de B, tornando possível a restauração do estado do objeto B, a partir de um estado capturado anteriormente por A. Assinale a alternativa com o nome do padrão que corresponde a essa estratégia de solução:",
+        "options": ["Command", "Mediator", "Memento", "Strategy", "Observer"],
+        "answer": "Memento"
+    },
+    {
+        "question": "Esse padrão define uma estrutura similar à de um esquema Publisher-Subscriber, pois existe um Publisher detentor de um conjunto de informações e registra um conjunto de objetos interessados em receber notificações de modificação desse conjunto de informações, ou seja, do estado do Publisher. Ao ter o seu estado interno modificado, o Publisher notifica os Subscribers que, por sua vez, executam algum procedimento específico de tratamento dessa modificação. Assinale a opção com o padrão correspondente à descrição acima:",
+        "options": ["Observer", "State", "Template Method", "Strategy", "Visitor"],
+        "answer": "Observer"
+    },
+    {
+        "question": "\"Na implementação de um processo complexo, um módulo A chama operações de um módulo B e de um módulo C. B, por sua vez, chama operações de C e de D. O módulo C chama operações de A e de E. O módulo D chama operações dos módulos B e C\". Esse cenário ilustra uma interação entre objetos no estilo muitos para muitos. Para simplificar esse processo, define-se um objeto que centraliza todas as interações entre esses objetos, de modo que eles passam a se comunicar apenas com esse elemento central. Dessa forma, o elemento central X passa a receber uma notificação de A, para então chamar operações de B e C. Da mesma maneira, a partir de uma notificação enviada por B, X chama operações de C e de D. Essa descrição corresponde à estrutura de solução de qual padrão?",
+        "options": ["Chain of Responsibility", "Strategy", "Visitor", "Template Method", "Mediator"],
+        "answer": "Mediator"
+    },
+    {
+        "question": "Sobre o padrão Mediator, assinale a alternativa correta:",
+        "options": ["Faz a mediação da execução de um conjunto de algoritmos paralelos, de forma que não haja problemas de sincronização.", "Pode ser aplicado em conjunto com o padrão Observer.", "Transforma uma interação entre objetos de uma estrutura 1-N para uma estrutura N-N", "Encapsula requisições em objetos, mediando o registro do histórico das requisições e o gerenciamento de uma fila de requisições.", "Permite definir um conjunto de passos em uma superclasse, sendo os passos comuns implementados como métodos dessa superclasse, enquanto os passos específicos são implementados nas suas subclasses."],
+        "answer": "Pode ser aplicado em conjunto com o padrão Observer."
+    },
+    {
+        "question": "Você está implementando um sistema e quer guardar o histórico de todas as requisições efetuadas pelo usuário via interface gráfica, de forma a poder realizar operações, como desfazer (undo) e refazer (redo) requisições. Assinale a alternativa com o nome do padrão mais indicado para ser aplicado nesse contexto:",
+        "options": ["Chain of Responsibility", "Strategy", "Mediator", "State", "Command"],
+        "answer": "Command"
+    },
+    {
+        "question": "\"Esse padrão encapsula uma requisição em um objeto, desacoplando o requisitante e o objeto executor. Esse encapsulamento permite registrar o histórico de requisições, reproduzir essas requisições em outro ambiente, bem como implementar operações de desfazer ou refazer o processamento associado à requisição\". Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Chain of Responsibility", "Command", "Mediator", "Iterator", "Template Method"],
+        "answer": "Command"
+    },
+    {
+        "question": "\"Ao invés de colocarmos o cálculo do frete de um pedido na classe Pedido, optamos por criar uma hierarquia de classes para encapsular os diferentes algoritmos de cálculo de frete que temos no sistema\". Assinale a alternativa com o nome do padrão GRASP que recomenda a criação de classes que não representam diretamente elementos concretos encontrados no domínio no negócio, seguindo uma decomposição de responsabilidades por comportamento e não por representação, como a descrita no cálculo do frete.",
+        "options": ["Invenção Pura", "Especialista na Informação", "Polimorfismo", "Acoplamento Baixo", "Indireção"],
+        "answer": "Invenção Pura"
+    },
+    {
+        "question": "\"Este padrão substitui soluções condicionais baseadas em switch-case ou if-then-else por uma chamada genérica de operação para um objeto que pode assumir diferentes formas em tempo de execução\". Assinale a alternativa com o nome do padrão GRASP correspondente a esta descrição:",
+        "options": ["Acoplamento Baixo", "Polimorfismo", "Indireção", "Especialista na Informação", "Controlador"],
+        "answer": "Polimorfismo"
+    },
+    {
+        "question": "Assinale a alternativa com a afirmativa CORRETA sobre o padrão Criador.",
+        "options": ["O padrão Criador consiste em criar módulos versáteis que possam cumprir diferentes propósitos", "O padrão Criador define um conjunto de condições para que uma classe A seja responsável por instanciar objetos de um classe B", "O padrão Criador recomenda que a criação de objetos seja feita por meio de clonagem", "O padrão Criador é utilizado para instanciar uma classe de uma família de classes similares", "O padrão Criador recomenda a criação de uma classe intermediária responsável por instanciar outros objetos"],
+        "answer": "O padrão Criador define um conjunto de condições para que uma classe A seja responsável por instanciar objetos de um classe B"
+    },
+    {
+        "question": "Um módulo A contém operações como conversão de medidas, formatação de valores monetários, remoção de espaços duplicados em strings e envio/recepção de arquivos FTP. O módulo A possui coesão:",
+        "options": ["Funcional", "Procedural", "Coincidente", "Temporal", "Sequencial"],
+        "answer": "Coincidente"
+    },
+    {
+        "question": "Assinale a alternativa que contém tipos de coesão de um módulo em ordem do tipo de coesão mais baixa para a mais alta:",
+        "options": ["Temporal - Lógica - Procedural", "Lógica - Coincidente - Sequencial", "Procedural - Sequencial - Comunicação", "Coincidente - Temporal - Sequencial", "Procedural - Lógica - Funcional"],
+        "answer": "Coincidente - Temporal - Sequencial"
+    },
+    {
+        "question": "Assinale a alternativa CORRETA sobre o padrão GRASP Coesão.",
+        "options": ["Um módulo com coesão alta é aquele que concentra o código das funções mais importantes do sistema", "Um módulo com coesão baixa é aquele que depende de um pequeno conjunto de módulos", "Um módulo com coesão alta é aquele que concentra operações logicamente relacionadas envolvendo diferentes tecnologias ou sistemas externos", "Um módulo com coesão baixa é aquele que possui um propósito bem definido", "Um módulo com coesão alta reúne elementos que contribuem para que o módulo realize o seu propósito específico"],
+        "answer": "Um módulo com coesão alta reúne elementos que contribuem para que o módulo realize o seu propósito específico"
+    },
+    {
+        "question": "Assinale a alternativa que descreve uma situação em que a utilização do padrão Especialista de Informação pode comprometer a coesão de um módulo.",
+        "options": ["Quando definimos uma classe que fornece uma interface de alto nível para módulos clientes utilizarem para disparar operações do negócio", "Quando colocamos em uma mesma classe operações de naturezas diferentes como lógica do negócio e acesso a banco de dados, uma vez que eles utilizam as mesmas informações da classe", "Quando definimos um objeto intermediário para mediar a comunicação entre objetos remotos", "Quando introduzimos uma interface abstrata em substituição a um código centralizado em um módulo com estruturas condicionais do tipo switch-case ou if-then-else", "Quando definimos a responsabilidade por criar um objeto para a classe que contém todas as informações necessárias para realizar eswsa criação"],
+        "answer": "Quando colocamos em uma mesma classe operações de naturezas diferentes como lógica do negócio e acesso a banco de dados, uma vez que eles utilizam as mesmas informações da classe"
+    },
+    {
+        "question": "Um módulo X escreve dados em uma tabela de um banco de dados relacional que é lida por um módulo Y. Se o desenvolvedor responsável pelo módulo X resolver mudar algo no esquema dessa tabela, será preciso avaliar o impacto dessa mudança em Y. Esse fato evidencia a existência de um acoplamento de que natureza entre os módulos X e Y?",
+        "options": ["Acoplamento Global", "Acoplamento de Estrutura", "Acoplamento de Dados", "Acoplamento Externo", "Acoplamento de Controle"],
+        "answer": "Acoplamento Externo"
+    },
+    {
+        "question": "Assinale a alternativa que apresenta os níveis de acoplamento entre módulos ordenados do mais baixo para o mais alto:",
+        "options": ["Dados - Estrutura - Externo - Controle - Conteúdo - Global", "Dados - Controle - Estrutura - Externo - Conteúdo - Global", "Estrutura - Dados - Controle - Conteúdo - Global - Externo", "Dados - Estrutura - Controle - Externo - Global - Conteúdo", "Estrutura - Dados - Controle - Global - Externo - Conteúdo"],
+        "answer": "Dados - Estrutura - Controle - Externo - Global - Conteúdo"
+    },
+    {
+        "question": "Assinale a alternativa com uma afirmativa correta sobre o padrão GRASP Variações Protegidas.",
+        "options": ["O padrão Variações Protegidas sugere proteger o sistema de variações concentrando a lógica dessas variações em um módulo controlador", "O padrão Variações Protegidas sugere identificar pontos do sistema propensos a variações e isolá-los em um módulo com coesão lógica", "O padrão Variações Protegidas sugere proteger o sistema de variações por meio de parâmetros definidos em uma classe com acesso global", "O padrão Variações Protegidas sugere proteger as variações de algoritmos sensíveis por meio do uso de recursos de criptografia", "O padrão Variações Protegidas sugere identificar pontos do sistema propensos a variações e isolá-los com a criação de interfaces no seu entorno"],
+        "answer": "O padrão Variações Protegidas sugere identificar pontos do sistema propensos a variações e isolá-los com a criação de interfaces no seu entorno"
+    },
+    {
+        "question": "Ao trabalhar com um aplicativo corporativo, segundo a arquitetura MVC, ocorre uma divisão natural das camadas, em termos dos projetos internos, ficando a camada View sob responsabilidade do projeto com terminador \"war\". A interface padrão, conforme o próprio terminador indica, é um aplicativo Java Web, sendo comum a implementação de um padrão de desenvolvimento para centralizar o tratamento das requisições, bem como redirecionar para a visualização correta, após efetuar as chamadas para a camada Controller. De qual padrão estamos falando, e qual o componente deve implementá-lo?",
+        "options": ["Padrão de desenvolvimento Facade e componente do tipo EJB", "Padrão de desenvolvimento Front Controller e componente do tipo Servlet", "Padrão de desenvolvimento DAO e componente do tio JPA", "Padrão de desenvolvimento Service Locator e componente do tipo JNDI", "Padrão de desenvolvimento Flyweight e componente do tipo EJB"],
+        "answer": "Padrão de desenvolvimento Front Controller e componente do tipo Servlet"
+    },
+    {
+        "question": "Ao trabalhar com um aplicativo corporativo, segundo a arquitetura MVC, as camadas Model e Controller são definidas ao nível do projeto interno com o terminador \"ejb\", e o NetBeans oferece ferramentas de automatização para a geração dos componentes necessários, com utilização de duas tecnologias específicas. Quais são as tecnologias utilizadas para as duas camadas citadas, respectivamente? ",
+        "options": ["JSP e Servlet", "Servlet e JPA", "EJB e Servlet", "JPA e EJB", "JPA e JSP"],
+        "answer": "JPA e EJB"
+    },
+    {
+        "question": "A arquitetura MVC (Model, View e Controller) é utilizada de forma ampla na criação de sistemas cadastrais e caracteriza-se pela divisão do sistema em três camadas, com objetivos específicos. Considerando a divisão utilizada pelo MVC, a interface de usuário e o componente DAO estariam, respectivamente, nas camadas:",
+        "options": ["View e Model", "Controller e Model", "View e Controller", "Model e View", "Model e Controller"],
+        "answer": "View e Model"
+    },
+    {
+        "question": "Uma mudança essencial no modelo de programação Java, com a evolução do JEE, foi o uso de anotações nas diversas tarefas de configuração dos EJBs do aplicativo. Para que serve a anotação Local no ambiente de criação de EJBs?",
+        "options": ["Definir um Stateless Session Bean", "Definir um contexto de persistência local para o Session Bean", "Definir a interface de acesso às entidades do JPA", "Definir um Stateful Session Bean", "Definir a interface de acesso local ao pool de EJBs"],
+        "answer": "Definir a interface de acesso local ao pool de EJBs"
+    },
+    {
+        "question": "Analise o propósito a seguir: \"Permitir a criação de uma família de objetos relacionados ou dependentes, de froam que o módulo cliente não precisse conhecer os objetos específicos das diferentes famílias, lidando apenas com as interfaces genéricas dos produtos dessas famílias\". Assinale a alternativa com o nome do padrão que possui esse propósito:",
+        "options": ["Prototype", "Singleton", "Factory Method", "Builder", "Abstract Factory"],
+        "answer": "Abstract Factory"
+    },
+    {
+        "question": "Analise a estratégia de solução a seguir: \"Definir uma hierarquia de classes responsáveis pela instanciação de um objeto complexo, geralmente construído a partir de um conjunto de passos, sendo cada passo definido como uma operação das classes dessa hierarquia, separando o processo de criação da representação interna dos produtos\". Assinale a alternativa com o nome do padrão que define essa estratégia:",
+        "options": ["Prototype", "Abstract Factory", "Factory Method", "Singleton", "Builder"],
+        "answer": "Builder"
+    }
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Glitch&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #202124;
+    color: #ffff;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#question{
+    width: 80%;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+}
+
+
+#options-form{
+    width: 80%;
+}
+
+#options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+
+.form-label{
+
+    background-color: rgb(54, 56, 56);
+    border: 2px solid #6a6868;
+    padding: 1rem;
+
+
+}
+
+.form-label:hover {
+    background-color: rgb(192, 196, 196);
+    color: black;
+}
+
+.highlighted{
+    background-color: rgb(192, 196, 196);
+    color: black;
+}
+
+
+.form-label input{
+    margin-right: 1rem;
+}
+
+.button-refresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progresso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barra-progresso{
+    width: 80%;
+    background-color: #202124;
+}
+
+.barra-progresso::-webkit-progress-value {
+    background-color: #4caf50;
+}
+
+#next-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+  
+@keyframes progress {
+   to { --progress-value: 60; }
+}
+  
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, #202124 79%, transparent 80% 100%),
+      conic-gradient(var(--color) calc(var(--progress-value) * 1%), white 0);
+    animation: progress 2s 1 forwards;
+}
+  
+.progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress 2s 1 forwards;
+    font-size: 2rem;
+    z-index: 10;
+    color: var(--color);
+}
