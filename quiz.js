@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         progressBar.classList.remove('hidden');
         progressBar.classList.add('progress-bar');
 
-        let status = (score/quizQuestions.length)*100;
+        let status = Math.round((score/quizQuestions.length)*100);
 
         console.log(status)
 
